@@ -1,0 +1,59 @@
+{
+    "id": "iam",
+    "title": "Identity & Access Management",
+    "navItems": [
+        {
+            "title": "User Access",
+            "expandable": true,
+            "permissions": [
+                {
+                    "method": "isEntitled"
+                }
+            ],
+            "routes": [
+                {
+                    "appId": "rbac",
+                    "title": "Users",
+                    "href": "/iam/rbac/users"
+                },
+                {
+                    "appId": "rbac",
+                    "title": "Roles",
+                    "href": "/iam/rbac/roles"
+                },
+                {
+                    "appId": "rbac",
+                    "title": "Groups",
+                    "href": "/iam/rbac/groups"
+                },
+                {
+                    "appId": "rbac",
+                    "title": "Red Hat Access Requests",
+                    "href": "/iam/rbac/access-requests",
+                    "notifier": "chrome.accessRequests.hasUnseen"
+                }
+            ]
+        },
+        {
+            "title": "Authentication Policy",
+            "expandable": true,
+            "permissions": [
+                {
+                    "method": "isEntitled"
+                }
+            ],
+            "routes": [
+                {
+                    "appId": "iam",
+                    "title": "Authentication Factors",
+                    "href": "/iam/authentication-policy/authentication"
+                },
+                {
+                    "appId": "iam",
+                    "title": "Identity Provider Integration",
+                    "href": "/iam/authentication-policy/identity-provider-integration"
+                }
+            ]
+        }
+    ]
+}
